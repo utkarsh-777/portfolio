@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+<head>
+  <title>
+    Home
+  </title>
+</head>
+    <div class="container border">
+      <h1 class="display-4 text-center mt-2" id="hometitle">Utkarsh's Portfolio</h1>
+      <div class="text-center">
+      <img src="{% static 'utkarsh.jpeg' %}" height="275px" width="200px" class="m-5" />
+      </div>
+      <h3 id="hometitle">My Projects:</h3>
+      <div class="row p-2" id="projects">
+        {% for project in projects %}
+        <div class="card col-4 p-2 mt-2" style="width: 18rem">
+            <img src="{{project.image.url }}" alt=".." />
+            <div class="card-body" id="card">
+              <h5 class="card-title">{{ project.title }}</h5>
+              <p class="card-text">{{ project.description }}</p>
+              <a href="{{ project.url }}" class="btn btn-primary">Project</a>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+  </div>
+
+{% endblock %}

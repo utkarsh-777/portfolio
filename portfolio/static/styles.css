@@ -1,0 +1,30 @@
+#hometitle{
+    font-family: 'Antic Slab', serif;
+}
+
+#card{
+    font-family: 'Chilanka', cursive;
+}
+
+#blogtitle{
+    font-family: 'Lemonada', cursive;
+    color: blue;
+}
+
+#blog{
+    font-family: 'Lemonada', cursive;
+    color: brown;
+}
+
+#blogs{
+    font-family: 'Lemonada', cursive;
+    color: blueviolet;
+}
+
+#nob{
+    font-family: 'Red Rose';
+}
+
+body{
+    background-color: blanchedalmond;
+}
